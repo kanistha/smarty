@@ -1,6 +1,6 @@
 ## Proof of Concept on Docker, Cloud Foundry integration to run
-    #### Spring Boot, RestServices, AngularsJS App
-    #### Liferay App
+   * Spring Boot, RestServices, AngularsJS App
+   * Liferay App
 
 ## Cloud Foundry
 
