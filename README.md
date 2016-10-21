@@ -26,7 +26,7 @@
             Org:            kanistha-org
             Space:          development
 
-#### Create a manifest file:
+#### Create a manifest file manifest.yml:
             ---
             applications:
             - name: smart-app
