@@ -2,8 +2,7 @@
 Spring Boot, RestServices, AngularsJS App
 
 # Docker
-
-Download URL: https://docs.docker.com/docker-for-windows/
+    Download URL: https://docs.docker.com/docker-for-windows/
     CREATE DOCKERFILE
     CREATE APPLICATION BINARY (WAR/JAR …)
     PULL THE REQUIRED CONTAINER
