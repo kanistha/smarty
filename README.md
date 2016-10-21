@@ -187,6 +187,4 @@ Run following commands from directory where your binary is available along with 
 
 #### Try URL http://localhost:8080/web/guest/home
 
-
-## Spring Boot & Docker: https://spring.io/guides/gs/spring-boot-docker/
-
+#### Spring Boot & Docker: https://spring.io/guides/gs/spring-boot-docker/
