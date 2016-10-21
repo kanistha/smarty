@@ -5,7 +5,7 @@
 ## Cloud Foundry
 
 #### Login to CF
-       *Run command cf login*
+       *Italic Run command cf login*
 
             API endpoint: https://api.run.pivotal.io
 
@@ -31,8 +31,12 @@
             applications:
             - name: smart-app
               memory: 512M
-#### Build :  mvn clean package
-#### Push : cf push smart-app -p target/app-1.0-SNAPSHOT.jar
+
+#### Build :
+        *Italic mvn clean package*
+
+#### Push to cloud foundry
+        *Italic cf push smart-app -p target/app-1.0-SNAPSHOT.jar*
 
         Creating app smart-app in org kanistha-org / space development as kanistha.acharya@hexad.de...
         OK
@@ -103,7 +107,7 @@
         #0   running   2016-10-18 05:16:09 PM   128.5%   251.9M of 512M   137.2M of 1G
 
 #### Show Applications
-        *cf apps*
+        *Italic cf apps*
             Getting apps in org kanistha-org / space development as kanistha.acharya@hexad.de...
             OK
 
@@ -112,8 +116,6 @@
             kanisthaa/smarty   stopped           0/1         1G       1G     kanisthaasmarty.cfapps.io
             smart-app          started           1/1         512M     1G     smart-app.cfapps.io
             smarty             stopped           0/1         1G       1G     smarty.cfapps.io
-
-
 
 
 ## Docker
