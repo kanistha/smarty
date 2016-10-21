@@ -5,7 +5,7 @@
 ## Cloud Foundry
 
 #### Login to CF
-       *Italic Run command cf login*
+        Run command 'cf login'
 
             API endpoint: https://api.run.pivotal.io
 
@@ -33,10 +33,10 @@
               memory: 512M
 
 #### Build :
-        *Italic mvn clean package*
+         mvn clean package
 
 #### Push to cloud foundry
-        *Italic cf push smart-app -p target/app-1.0-SNAPSHOT.jar*
+        cf push smart-app -p target/app-1.0-SNAPSHOT.jar
 
         Creating app smart-app in org kanistha-org / space development as kanistha.acharya@hexad.de...
         OK
@@ -107,7 +107,7 @@
         #0   running   2016-10-18 05:16:09 PM   128.5%   251.9M of 512M   137.2M of 1G
 
 #### Show Applications
-        *Italic cf apps*
+        cf apps
             Getting apps in org kanistha-org / space development as kanistha.acharya@hexad.de...
             OK
 
@@ -120,21 +120,21 @@
 
 ## Docker
     Download URL: https://docs.docker.com/docker-for-windows/
-    #### CREATE DOCKERFILE
-    #### CREATE APPLICATION BINARY (WAR/JAR …)
-    #### PULL THE REQUIRED CONTAINER
-    #### LOGIN TO DOCKER HUB
-    #### BUILD DOCKER IMAGE
-    #### PUSH IMAGE TO DOCKER HUB
-    #### RUN DOCKER IMAGE
+     * CREATE DOCKERFILE
+     * CREATE APPLICATION BINARY (WAR/JAR …)
+     * PULL THE REQUIRED CONTAINER
+     * LOGIN TO DOCKER HUB
+     * BUILD DOCKER IMAGE
+     * PUSH IMAGE TO DOCKER HUB
+     * RUN DOCKER IMAGE
 
 #### Create DockerFile
-   ###### For WAR deployment:
+###### For WAR deployment:
         FROM snasello/liferay-6.2
         VOLUME /tmp
         ADD liferay-portal-6.2-ce-ga5.war /usr/local/tomcat/webapps/
 
-   ###### For Java jar deployment
+###### For Java jar deployment
         FROM openjdk
         VOLUME /tmp
         ADD smarty-1.0-SNAPSHOT.jar smatry.jar
