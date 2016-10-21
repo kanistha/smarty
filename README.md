@@ -26,13 +26,13 @@
             Org:            kanistha-org
             Space:          development
 
-#### Create a manifest file manifest.yml:
+#### Create a manifest file manifest.yml
             ---
             applications:
             - name: smart-app
               memory: 512M
 
-#### Build :
+#### Build
          mvn clean package
 
 #### Push to cloud foundry
@@ -117,7 +117,6 @@
             smart-app          started           1/1         512M     1G     smart-app.cfapps.io
             smarty             stopped           0/1         1G       1G     smarty.cfapps.io
 
-
 ## Docker
     Download URL: https://docs.docker.com/docker-for-windows/
      * CREATE DOCKERFILE
@@ -155,7 +154,6 @@ Run following commands from directory where your binary is available along with 
     Password:
     Login Succeeded
 
-
 #### Build Docker Image:
     docker build -t kanisthaa/liferay-portal-6.2-app .
     Sending build context to Docker daemon 214.7 MB
@@ -169,21 +167,16 @@ Run following commands from directory where your binary is available along with 
      ---> 66d7b31270f8
     Successfully built 66d7b31270f8
 
-
-
 #### Check Image
       Docker  images
-
 
 #### Push Image to Docker Hub
 
     docker push kanisthaa/liferay-portal-6.2-app
 
-
 #### Run Docker Image
     docker run -p 8080:8080 -t kanisthaa/liferay-portal-6.2-app
     docker run -p 8080:8080 -t kanisthaa/smarty
-
 
 #### Try URL http://localhost:8080/web/guest/home
 
